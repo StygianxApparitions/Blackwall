@@ -2,7 +2,7 @@ const http = require("node:http");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const HOST = "127.0.0.1";
+const HOST = process.env.HOST || "127.0.0.1";
 const PORT = Number(process.env.PORT || 3000);
 const MAX_BODY_BYTES = 4096;
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
