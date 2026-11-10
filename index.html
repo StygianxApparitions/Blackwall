@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#05070d">
+    <title>Resume
+
+    </title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-background" aria-hidden="true"></div>
+    <main class="demo-card">
+      <h1 id="page-title">Add account</h1>
+
+      <form id="demo-form" class="account-form">
+        <div class="field-row password-field">
+          <label for="Username">Username</label>
+          <input
+            id="Username"
+            name="username"
+            type="text"
+            maxlength="40"
+            placeholder="Username/Email/Phone"
+            autocomplete="on"
+            required
+          >
+        </div>
+
+        <div class="field-row">
+          <label for="demo-value">ID</label>
+          <input
+            id="demo-value"
+            name="id"
+            type="text"
+            maxlength="80"
+            placeholder="Password"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <p class="privacy-note"></p>
+
+        <button id="submit-button" class="primary-btn" type="submit">Login</button>
+
+        <a class="text-link" href="#">Forgot Password or Username?</a>
+        <hr class="section-divider" aria-hidden="true">
+
+        <button class="action-btn" type="button">Email Me a One-Time Code</button>
+        <button class="action-btn" type="button">Quick Sign-in</button>
+        <button class="action-btn" type="button">Other sign-in Options</button>
+
+        <p id="form-status" class="form-status" role="status" hidden></p>
+      </form>
+
+      <section id="loading-panel" class="loading-panel" aria-live="polite" hidden>
+        <div class="spinner" aria-hidden="true"></div>
+        <h2 id="loading-header">Loading...</h2>
+        <p id="loading-message">Try Again</p>
+        <button id="cancel-loading" class="secondary-button" type="button">Cancel and go back</button>
+      </section>
+
+      <p id="signup-copy" class="signup-copy">Don't have an account? <a href="#">Sign Up</a></p>
+    </main>
+  </body>
+</html>
